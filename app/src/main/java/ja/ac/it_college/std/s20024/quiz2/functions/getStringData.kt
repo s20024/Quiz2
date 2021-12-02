@@ -12,11 +12,9 @@ import java.net.URL
 
 @WorkerThread
 suspend fun getStringData(sourceUrl: String) : String {
-    println("start")
     val res = withContext(Dispatchers.IO) {
         var result = ""
         val url = URL(sourceUrl)
-        println("con")
         val con = url.openConnection() as? HttpURLConnection
         con?.apply {
             try {
@@ -33,13 +31,11 @@ suspend fun getStringData(sourceUrl: String) : String {
             }
             disconnect()
         }
-        println("result")
         result
     }
     return res
 }
 fun extendString(stream: InputStream?): String {
-    println("extendString")
     val reader = BufferedReader(InputStreamReader(stream, "UTF-8"))
     return reader.readText()
 }
