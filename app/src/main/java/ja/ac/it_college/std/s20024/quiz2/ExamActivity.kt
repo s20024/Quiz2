@@ -160,6 +160,8 @@ class ExamActivity : AppCompatActivity() {
         binding.radioButton2.text = choices[2]
         binding.radioButton3.text = choices[3]
 
+        binding.correctImage.visibility = View.GONE
+
         when (choices.size) {
             4 -> {
                 binding.radioButton4.visibility = View.GONE
@@ -209,6 +211,12 @@ class ExamActivity : AppCompatActivity() {
 
         val helper = DatabaseHelper(this)
         data.setUserAnswersList(userAnswersList, helper)
+
+        if(data.getCorrect()) {binding.correctImage.setImageResource(R.drawable.t)}
+        else {binding.correctImage.setImageResource(R.drawable.f)}
+
+        binding.correctImage.visibility = View.VISIBLE
+
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(1000L) {
             nextQuestion()

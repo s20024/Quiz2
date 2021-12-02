@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ExamActivity">
 
+    <ImageView
+        android:id="@+id/correctImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/correct"
+        app:layout_constraintBottom_toBottomOf="@+id/questionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/questionNumView"
+        app:layout_constraintTop_toTopOf="@+id/questionNumView"
+        app:srcCompat="@drawable/t"
+        tools:ignore="ImageContrastCheck" />
+
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
@@ -69,9 +81,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questionNumView" />
+        app:layout_constraintTop_toBottomOf="@+id/questionNumView"
+        tools:ignore="TextContrastCheck" />
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
