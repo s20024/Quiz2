@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Quiz2</string>
+    <string name="name" translatable="false">s20024</string>
+    <string name="fastMode" translatable="false">fast mode</string>
+    <string name="falseMode" translatable="false">false mode</string>
+    <string name="fastModeHelper">It is a mode to answer immediately according to the number of questions.</string>
+    <string name="falseModeHelper">This mode asks questions that have not been solved yet and questions that are incorrect.</string>
+    <string name="versionUpHelper">Check for version updates.</string>
+    <string name="databaseUpHelper">Update the database.</string>
+    <string name="versionLoading">Updating the version.</string>
+    <string name="databaseLoading">Updating the database.</string>
+    <string name="howQuestions">How questions</string>
+    <string name="howSecond">How seconds</string>
+    <string name="start" translatable="false">start</string>
+    <string name="pleaseVersionUp">Please update the version.</string>
+    <string name="versionLatest">The version is the latest.</string>
+    <string name="back" translatable="false">back</string>
+    <string name="timeFormat" translatable="false">%02d:%2$02d</string>
+    <string name="id" translatable="false">id</string>
+    <string name="questionFormat">question%1d</string>
+    <string name="question" translatable="false">question</string>
+    <string name="choice" translatable="false">choice</string>
+    <string name="next" translatable="false">next</string>
+    <string name="decide" translatable="false">decide</string>
+    <string name="pleaseCountAnswer">The number of answers is incorrect.</string>
+    <string name="result">Result</string>
+    <string name="time">Time</string>
+    <string name="scoreFormat" translatable="false">%02d/%2$02d</string>
+    <string name="correct">correct</string>
+    <string name="incorrect">incorrect</string>
+    <string name="noQuizNow">No Quiz Now</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="whichUpdateDatabase">Do you want to update the database?</string>
+    <string name="pleaseUpdateDatabase">Please update the database from the icon on the upper right.</string>
+</resources>

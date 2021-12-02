@@ -1,0 +1,176 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/modeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:text="@string/fastMode"
+        android:textSize="14sp"
+        app:barrierAllowsGoneWidgets="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/falseSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:text="@string/falseMode"
+        android:textSize="14sp"
+        app:barrierAllowsGoneWidgets="true"
+        app:layout_constraintEnd_toEndOf="@+id/modeSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/modeSwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/falseSwitch" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <NumberPicker
+        android:id="@+id/countPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <NumberPicker
+        android:id="@+id/secondPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/countPicker" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/howQuestions"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/howQuestions"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/versionImage"
+        android:layout_width="70dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="104dp"
+        android:contentDescription="@string/versionUpHelper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_autorenew_24"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/databaseImage"
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/databaseLoading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_playlist_add_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/fastModeHelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/falseMode"
+        app:layout_constraintBottom_toBottomOf="@+id/modeSwitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/modeSwitch"
+        app:srcCompat="@drawable/ic_baseline_help_outline_24" />
+
+    <ImageView
+        android:id="@+id/falseModeHelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/falseModeHelper"
+        app:layout_constraintBottom_toBottomOf="@+id/falseSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/fastModeHelper"
+        app:layout_constraintStart_toStartOf="@+id/fastModeHelper"
+        app:layout_constraintTop_toTopOf="@+id/falseSwitch"
+        app:srcCompat="@drawable/ic_baseline_help_outline_24" />
+
+    <ImageView
+        android:id="@+id/versionHelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/versionUpHelper"
+        app:layout_constraintBottom_toBottomOf="@+id/versionImage"
+        app:layout_constraintStart_toStartOf="@+id/versionImage"
+        app:srcCompat="@drawable/ic_baseline_help_outline_24" />
+
+    <ImageView
+        android:id="@+id/databaseHelper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/databaseUpHelper"
+        app:layout_constraintBottom_toBottomOf="@+id/databaseImage"
+        app:layout_constraintStart_toStartOf="@+id/databaseImage"
+        app:srcCompat="@drawable/ic_baseline_help_outline_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz2</string>
+    <string name="fastModeHelper">問題数に合わせて即答するモードです。</string>
+    <string name="falseModeHelper">まだ解いていない問題と間違った問題を出題するモードです。</string>
+    <string name="versionUpHelper">バージョン更新の確認をします。</string>
+    <string name="databaseUpHelper">データベースの更新をします。</string>
+    <string name="versionLoading">バージョンを更新しています。</string>
+    <string name="databaseLoading">データベースを更新しています。</string>
+    <string name="howQuestions">問題数</string>
+    <string name="howSecond">秒数</string>
+    <string name="pleaseVersionUp">バージョンを更新してください。</string>
+    <string name="versionLatest">バージョンは最新の状態です。</string>
+    <string name="questionFormat">%1d問目</string>
+    <string name="pleaseCountAnswer">回答数が間違っています。</string>
+    <string name="result">結果</string>
+    <string name="time">時間</string>
+    <string name="correct">正解</string>
+    <string name="incorrect">不正解</string>
+    <string name="noQuizNow">問題がない</string>
+    <string name="yes">する</string>
+    <string name="no">しない</string>
+    <string name="whichUpdateDatabase">データベースのアップデートをしますか？</string>
+    <string name="pleaseUpdateDatabase">" 右上のアイコンからデータベースの更新を行ってください。 "</string>
+</resources>
